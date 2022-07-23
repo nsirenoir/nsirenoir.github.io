@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title> NSI 1ère à Renoir </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="h1_bandeau">Les cours de 1ère NSI - lycée Renoir</h1>          
+      <nav>
+        <ul id="ulmenu">
+            <li class="limenu_h">  <a href="index.html" class="amenu">Accueil</a> </li>
+            <li class="limenu_h">  <a href="nsi_1ere.html" class="amenu">NSI 1ère</a> </li>
+            <li class="limenu_h">  <a href="nsi_term.html" class="amenu">NSI terminale</a> </li>
+            <li class="limenu_h">  <a href="snt.html" class="amenu">SNT seconde</a> </li>
+            <li class="limenu_h2"> &nbsp; </li>
+        </ul>
+      </nav>
+      <img src="img/keyboard.jpg" alt="Photo d'un clavier" width = 100%>
+    </header>
+
+    <section id="gauche" class="corpstexte">
+        <section>   
+        <h2> Matériel et logiciels recommandés</h2>
+        <p><b>Matériel :</b> Un cahier (pour prendre des notes en classe et faire des brouillons) et une clé USB. </p>
+        <p> <b>Pour programmer il faut un ordinateur </b> et pour progresser il faut travailler en cours et chez soit ! 
+          <b>À peu près n'importe quel ordinateur peut faire l'affaire</b>, même une machine très "bas de gamme" ou un peu ancienne, nous 
+          n'aurons pas besoin d'une grosse puissance de calcul, ni d'une grande quantité de mémoire et que ce 
+          soit un Mac, un PC sous Windows ou sous Linux, peu importe, les logiciels qu'on utilisera tourneront. 
+          Faute de mieux une tablette peut dépanner mais ce sera très inconfortable à l'utilisation (surtout sans clavier)
+          et rapidement inutilisable avec des programmes un peu ambitieux. 
+          Les programmes faits en classe seront sauvegardés dans le dossier perso. des élèves mais 
+          pour pouvoir continuer des programmes commencés ou réviser chez soi, il est fortement 
+          recommandé de les sauvegarder sur une clé usb ou dans un "cloud".
+        </p>
+        
+        <p><b>Logiciels (au minimum) : <a class="liendocument" href = "https://www.python.org/downloads/">Python</a>, <a class="liendocument" href="https://pyzo.org/start.html">Pyzo</a>,
+          et <a class="liendocument" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>.</b></p>
+        
+        <p> Pour ce qui est des logiciels, il faut <b>impérativement installer une distribution Python 
+          et un <a class="liendocument" href="https://fr.wikipedia.org/wiki/Environnement_de_développement">IDE</a></b>. 
+        <br>
+        Au lycée, la distribution <a class="liendocument" href="https://www.anaconda.com/products/individual">Anaconda</a> est installée. 
+        Elle permet d'avoir à disposition de très nombreux modules sans rien installer d'autre et nous utiliseront l'IDE <a class="liendocument" href="https://pyzo.org/start.html">Pyzo</a>. 
+        Pyzo est un IDE fait pour coder exclusivement en Python (IDLE) qui est facile à utiliser.
+
+        Je vous conseille d'installer d'abord Anaconda puis ensuite Pyzo. Vous pouvez aussi simplement
+        installer la dernière version de <a class="liendocument" href = "https://www.python.org/downloads/">Python</a> puis Pyzo.
+        Dans ce cas, vous devrez installer "à la main" certains modules quand cela sera nécessaire (c'est très facile à faire).
+        Vous remarquerez (peut-être) qu'un autre IDE est déjà fourni avec Anaconda, il s'agit de Spyder 
+        qui peut aussi être utilisé (mais ce ne sera pas celui du lycée). 
+        <br>
+        Il serait aussi bien d'installer un éditeur de texte/code à coloration syntaxique, 
+        je vous conseille : <b><a class="liendocument" href="https://code.visualstudio.com/downloadVisualStudioCode">VisualStudioCode</a></b> qui est actuellement LA référence pour coder dans à peu
+        tous les langages grâce à une multitude d'extensions (il peut remplacer Pyzo pour coder en Python, 
+        mais demande plus d'habitude pour être pris en main) ou <b>ATOM</b> ou encore <b>Brackets</b> qui est particulièrement adapté au 
+        développement de sites web. Au lycée, nous avons VisualStudioCode et Brackets d'installer sur les 
+        machines.
+        <br>
+        Pour tous ceux qui ont une machine sous windows ou MacOS, vous pouvez éventuellement installer un 
+        système Linux virtualisé (virtualbox + distribution Linux) pour l'un des chapitres portant
+        sur l'utilisation de cet OS en ligne de commande que l'on fera au cours du 3ème trimestre,
+        mais on peut aussi s'en passer en utilisant des solutions en ligne.
+        <br>
+        Le dernier logiciel qui sera utile est <a class="liendocument" href="http://www.lernsoftware-filius.de/Herunterladen">Filius</a>, 
+        qui est un logiciel de simulation de réseau. 
+        Le site est en allemand  mais le logiciel est ensuite en français. 
+        Nous utiliserons ce logiciel au 3ème trimestre, il n'y a donc pas d'urgence et de plus il 
+        n'y a pas de version MacOs proposée mais on peut se débrouiller en "bidouillant" à le faire fonctionner 
+        tout de même sur un mac (j'expliquerai si besoin à ce moment là de l'année).
+        <br>
+        Pour ceux qui ne disposent pas actuellement d'un ordinateur mais qui ont au moins une tablette 
+        (un téléphone portable ne sert à rien en NSI), vous pouvez utiliser 2 sites pour vous familiariser 
+        avec Python et commencer à coder des petites choses : <b><a class="liendocument" href="https://repl.it/languages/python3">repl.it</a> 
+          et <a class="liendocument" href="http://www.pythontutor.com/visualize.html#mode=edit">pythontutor</a></b> 
+          plus d'informations dans l'introduction du 1er chapitre ci-dessous).
+        <p>
+        <b>Remarque sur les navigateurs :</b> Certains navigateurs respectent plus que d'autres les standards 
+        du Web et sont plus adaptés que d'autres au développement en offrant davantage d'outils. Je vous 
+        conseille ainsi d'<b>utiliser Firefox ou <a class = "liendocument" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a></b> que vous soyez sur PC ou sur Mac 
+        (en tout cas dans le cadre de la NSI) et d'éviter particulièrement InternetExplorer, 
+        Edge (un peu "moins pire") et dans une moindre mesure Safari.</p>
+        <br>
+      <hr>
+    </section> 
+
+      <section>
+        <h2> Les cours</h2>
+        <p>Vous trouverez les différents chapitres traités dans l'année ci-dessous :</p>
+
+        <h5>Chapitre 1 : Introduction à la programmation en Python </h5>
+        <a class="liencours" href="premiere/chap1_python.html"><h4>Cours : Programmation et langages (partie 1) - Introduction à la programmation en Python</h4></a>
+        <p><a class="liencours" href="corr_prem/corr_chap1_Python.pdf"><h4>Correction des exercices du cours</h4></a> </p>
+        <p><a class="liencours" href="premiere/chap1_fiche_ex.pdf"><h4>Fiche d'exercices</h4></a> </p>
+        <p><a class="liencours" href="premiere/TP_loto.pdf"><h4>TP : le loto</h4></a> </p>
+        <p><a class="liencours" href="premiere/jeu_lettres.html"><h4>Pour aller plus loin...</h4></a> </p>
+        
+        <h5>Chapitre 2 : Représentation des données </h5>
+        <a class="liencours" href="premiere/chap2_Representation_des_donnees.pdf"><h4>Cours : Représentation des données</h4></a>
+        <a class="liencours" href="premiere/Intro_Representation_donnees.pdf"><h4>Slides : Représentation des données</h4></a>
+        <a class="liencours" href="premiere/TD_Representation_donnees.pdf"><h4>TD : Exercices sur la représentation des données</h4></a>
+        <a class="liencours" href="https://cloud-nice.beta.education.fr/s/odK3WPZ5j3NLddm"><h4>Correction des exercices</h4></a>
+        
+        <h5>Chapitre 3 : Interaction homme/machine sur le Web</h5>
+        <a class="liencours" href="premiere/Slides_Introduction_web.pdf"><h4>Présentation du cours</h4></a>
+        <a class="liencours" href="premiere/Intro_Web.pdf"><h4>Cours (1) : Introduction au Web</h4></a>
+        <a class="liencours" href="premiere/HTML.pdf"><h4>Cours (2) : Introduction au HTML</h4></a>
+        <a class="liencours" href="premiere/CSS.pdf"><h4>Cours (3) : Introduction au CSS</h4></a>
+        <a class="liencours" href="premiere/memo_HTML.pdf"><h4>Mémento HTML</h4></a>
+        <a class="liencours" href="premiere/tp1_HTML.pdf"><h4>TP1 : HTML </h4> <a href="premiere/matrix.jpg" target= "_blank">TP1 : fichier image à télécharger</a> </a>
+        <a class="liencours" href="premiere/TP_CSS.pdf"><h4>TP2 : CSS</h4></a>
+        <a class="liencours" href="premiere/TP_CSS_2.pdf"><h4>TP3 : Complément CSS</h4></a>
+        <a class="liencours" href="premiere/JavaScript.pdf"><h4>Initiation JavaScript</h4></a>
+        <a class="liencours" href="premiere/fiche-web-javascript.pdf"><h4>TP3 : TP/cours JavaScript</h4></a>
+        <a class="liencours" href="premiere/consignes_projet_2020-21.pdf"><h4>Projet Web</h4></a>
+        
+        <h5>Chapitre 4 : Architecture machine </h5>
+        <a class="liencours" href="premiere/architecture_machine.pdf"><h4>Cours : Architecture machine</h4></a>
+        <a class="liencours" href="premiere/Fiche_ArchitectureMaterielle.pdf"><h4>TP : Architecture machine</h4></a>
+        <a class="liencours" href="premiere/TD2_circuits.pdf"><h4>TD2 : Un autre circuit</h4></a>
+        
+        <h5>Chapitre 5 : Types construits </h5>
+        <a class="liencours" href="premiere/cours_types_construits.pdf"><h4>Cours : Types construits (Python)</h4></a>
+        <a class="liencours" href="premiere/slide_types_construits.pdf"><h4>Slides du cours</h4></a>
+        <a class="liencours" href="premiere/fiche1_types_construits.pdf"><h4>TP1 : listes</h4></a>
+        <a class="liencours" href="premiere/TP2_listes.pdf"><h4>TP2 : listes</h4></a>
+        <a class="liencours" href="premiere/fiche_Dictionnaires.pdf"><h4>TP3 : Dictionnaires</h4></a>
+        <a class="liencours" href="premiere/tp_dictionnaires2.pdf"><h4>TP4 : Dictionnaires - fin</h4></a>Vous pouvez télécharger les variables utilisées en cliquant sur <a href='premiere/variables_tp_dico2.py'>lien.</a>
+        
+        <h5>Chapitre 6 : Traitement des données </h5>
+        <a class="liencours" href="premiere/nsi_traitements_donnees.pdf"><h4>Cours et TP : Traitement des données</h4></a>
+        <a class="liencours" href="premiere/fichiers_csv.zip"><h4>Fichiers à télécharger (en .zip)</h4></a>
+        
+        <h5>Chapitre 7 : Algorithmique </h5>
+        <a class="liencours" href="premiere/complexite_nsi.pdf"><h4>Cours (1ère partie) : Complexité</h4></a>
+        <a class="liencours" href="premiere/td_complexite.pdf"><h4>TD Complexité</h4></a>
+        <a class="liencours" href="premiere/terminaison_correction.pdf"><h4>Cours (2ème partie) : Terminaison et Correction</h4></a>
+        <a class="liencours" href="premiere/tp_terminaison_correction.pdf"><h4>TD/TP : Terminaison et Correction</h4></a>
+        <a class="liencours" href="premiere/cours_tris(1).pdf"><h4>Cours (3ème partie) : Algorithmes de tris</h4></a>
+        <a class="liencours" href="premiere/tp_tris.pdf"><h4>TP : Tris par selection et insertion.</h4></a>
+
+        <h5>Chapitre 8 : Systèmes d'exploitation / ligne de commande.</h5>
+        <a class="liencours" href="premiere/nsi_OS.pdf"><h4>Cours et TP : Systèmes d'exploitation</h4></a>
+        <a class="liencours" href="premiere/Presentation_OS.pdf"><h4>Slides du cours (en pdf)</h4></a>
+        <a class="liencours" href="premiere/Tuto_machine_virtuelle.pdf"><h4>Pour aller plus loin : installer une machine virtuelle</h4></a>
+        
+        <h5>Chapitre 9 : Réseaux : Transmission des données.</h5>
+        <a class="liencours" href="premiere/cours_reseau_1ere.pdf"><h4>Cours : Transmission des données</h4></a>
+        <a class="liencours" href="premiere/TP_filius_reseau.pdf"><h4>TP : Construire des réseaux avec Filius</h4></a>
+        
+        <h5>Chapitre 10 : Recherche dichotomique.</h5>
+        <a class="liencours" href="premiere/dichotomie.pdf"><h4>Cours : Recherche dichotomique </h4></a>
+        
+        <h5>Chapitre 11 : Algorithmes gloutons.</h5>
+        <a class="liencours" href="premiere/cours_gloutons.pdf"><h4>Cours et tp : Algorithmes gloutons </h4></a>
+
+        <h5>Chapitre 12 : k plus proches voisins.</h5>
+        <a class="liencours" href="premiere/courstp_k_plus_proches.pdf"><h4>Cours et tp : Algorithme des k plus proches voisins </a> <a href="http://nsi.renoir.free.fr/premiere/spe_premiere.csv" download="spe_premiere.csv ">(spe_premiere.csv)</a> </h4>
+      </section>     
+    </section>
+
+    <section id="droite">
+      <h3>Sites à visiter :</h3>
+      <ul id="uldroite">
+          <li class="limenu_d">  <a href="https://cache.media.eduscol.education.fr/file/SP1-MEN-22-1-2019/26/8/spe633_annexe_1063268.pdf" class="amenu" target="_blank" >Programme de 1ère</a> </li>
+          <li class="limenu_d">  <a href="https://eduscol.education.fr/cid144156/nsi-bac-2021.html" target="_blank" class="amenu">Ressources M.E.N.</a>
+          <li class="limenu_d">  <a href="https://openclassrooms.com/fr/courses/235344-apprenez-a-programmer-en-python" target="_blank" class="amenu">OpenClassRooms (Python)</a> </li>
+          <li class="limenu_d">  <a href="https://docs.python.org/fr/3/tutorial/index.html" target="_blank" class="amenu">Référence Python</a> 
+          </li>
+          <li class="limenu_d">  <a href="https://www.pierre-giraud.com/python-apprendre-programmer-cours/" target="_blank" class="amenu">Python et Web</a> 
+          </li>
+          <li class="limenu_d">  <a href="https://pixees.fr/informatiquelycee/" target="_blank" class="amenu">NSI 1ère et Term : Une référence</a> 
+          </li>
+          <li class="limenu_d">  <a href=" https://www.python-lycee.com" target="_blank" class="amenu">Cours, vidéos, tutos (Python)</a> 
+          </li>
+          <li class="limenu_d">  <a href="https://www.societe-informatique-de-france.fr" target="_blank" class="amenu">SIF</a>
+          <li class="limenu_d">  <a href="https://cache.media.eduscol.education.fr/file/SPE8_MENJ_25_7_2019/93/3/spe247_annexe_1158933.pdf" class="amenu" target="_blank"  >Programme de Term</a> </li>  
+      </ul>  
+    </section>   
+    
+    <footer>
+        <img src="img/code_JS.jpg" alt="codage page web" width=100%>
+    </footer>
+
+  </body> 
+  
+</html>
+    
+
+
